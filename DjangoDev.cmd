@@ -1,3 +1,3 @@
 D:
-cd /DjangDev
+cd \DjangoDev
 git pull

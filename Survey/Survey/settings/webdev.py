@@ -7,7 +7,7 @@ TEMPLATE_DEBUG = DEBUG
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '/Users/gene/Documents/TextMate/python/DjangoDev/Survey/DB/Survey.db',                      # Or path to database file if using sqlite3.
+        'NAME': 'D:/DjangoDev/DB/Survey.db', # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': '',
         'PASSWORD': '',
@@ -25,7 +25,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-	'/Users/gene/Documents/TextMate/python/Survey/Survey/TEMPLATES',
+	'D:\DjangoDev\Survey\TEMPLATES'
 )
 
 #
