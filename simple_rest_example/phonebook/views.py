@@ -17,6 +17,7 @@ def secret_key(request, *args, **kwargs):
 
 class Contacts(Resource):    
 	
+	@signature_required(secret_key)	
 	def get(self, request, contact_id=None, **kwargs):
 		json_serializer = serializers.get_serializer('json')()
 		if contact_id:
@@ -31,7 +32,7 @@ class Contacts(Resource):
 			fname=request.POST.get('fname'),            
 			lname=request.POST.get('lname'),            
 			phone_number=request.POST.get('phone_number'))        
-		return HttpResponse(status=201)    
+		return HttpResponse(status=201) #created    
 			
 	def delete(self, request, contact_id):        
 		contact = Contact.objects.get(pk=contact_id)        
