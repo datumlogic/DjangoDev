@@ -7,7 +7,7 @@ TEMPLATE_DEBUG = DEBUG
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': '/Users/gene/Documents/TextMate/python/DjangoDev/Survey/DB/Survey.db',                      
+        'NAME': '/Users/gene/Documents/TextMate/python/DjangoDev/DB/Survey.db',                      
         # The following settings are not used with sqlite3:
         'USER': '',
         'PASSWORD': '',
