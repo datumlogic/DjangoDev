@@ -1,3 +1,3 @@
 DjangoDev
 =========
-Developing and prototyping web application with Django
+Developing and prototyping web applications with Django

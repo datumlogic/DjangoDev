@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>DjangoDev.cmd</string>
+	<string>README.md</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -14,33 +14,33 @@
 			<key>filename</key>
 			<string>DjangoDev.cmd</string>
 			<key>lastUsed</key>
-			<date>2013-05-30T10:08:11Z</date>
+			<date>2013-05-30T22:03:17Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>README.md</string>
+			<key>lastUsed</key>
+			<date>2013-05-31T11:01:36Z</date>
 			<key>selected</key>
 			<true/>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>simple_rest_example</string>
+			<key>regexFolderFilter</key>
+			<string>!.*/(\.[^/]*|CVS|_darcs|_MTN|\{arch\}|blib|.*~\.nib|.*\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$</string>
+			<key>sourceDirectory</key>
+			<string>simple_rest_example</string>
 		</dict>
 		<dict>
 			<key>expanded</key>
 			<true/>
 			<key>name</key>
-			<string>simple_rest_example</string>
-			<key>regexFolderFilter</key>
-			<string>!.*/(\.[^/]*|CVS|_darcs|_MTN|\{arch\}|blib|.*~\.nib|.*\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$</string>
-			<key>sourceDirectory</key>
-			<string>simple_rest_example</string>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>Survey</string>
 			<key>regexFolderFilter</key>
 			<string>!.*/(\.[^/]*|CVS|_darcs|_MTN|\{arch\}|blib|.*~\.nib|.*\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$</string>
 			<key>sourceDirectory</key>
 			<string>Survey</string>
-		</dict>
-		<dict>
-			<key>filename</key>
-			<string>simple_rest_example/README.MD</string>
-			<key>lastUsed</key>
-			<date>2013-05-30T09:12:13Z</date>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
@@ -61,6 +61,20 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
+		<key>README.md</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>43</integer>
+				<key>line</key>
+				<integer>2</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 		<key>Survey/README.md</key>
 		<dict>
 			<key>caret</key>
@@ -75,14 +89,56 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>simple_rest_example/README.MD</key>
+		<key>Survey/Survey/__init__.py</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>3</integer>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>Survey/Survey/settings/base.py</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>112</integer>
+		</dict>
+		<key>Survey/Survey/settings/webdev.py</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>32</integer>
+				<key>line</key>
+				<integer>27</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>Survey/manage.py</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>10</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -92,9 +148,13 @@
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>simple_rest_example/README.MD</string>
 		<string>Survey/README.md</string>
+		<string>README.md</string>
 		<string>DjangoDev.cmd</string>
+		<string>Survey/Survey/settings/webdev.py</string>
+		<string>Survey/manage.py</string>
+		<string>Survey/Survey/__init__.py</string>
+		<string>Survey/Survey/settings/base.py</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
