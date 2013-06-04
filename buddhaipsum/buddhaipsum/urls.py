@@ -9,6 +9,6 @@ admin.autodiscover()
 
 urlpatterns = patterns('',    
 	url(r'^api/', include('api.urls')),
-	#url(r'^ipsum/', include('ipsum.urls')), 
+	url(r'^ipsum/', include('ipsum.urls')), 
 	url(r'^admin/', include(admin.site.urls)),
 )
