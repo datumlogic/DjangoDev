@@ -3,5 +3,5 @@ read -p "Commit description: " desc
 git add . && \
 git add -u && \
 git commit -m "$desc" && \
-git push origin master –tags
+git push origin master
 ssh Administrator@datumlogic.com DjangoDev.cmd

@@ -1,3 +1,3 @@
-from django.db import models
 
-# Create your models here.
+# NOT USING A TRADIONAL MODEL FOR IPSUM
+# THIS FILE BLANK INTENTIONALLY

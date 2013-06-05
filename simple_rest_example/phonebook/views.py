@@ -31,7 +31,7 @@ class Contacts(Resource):
 		Contact.objects.create(            
 			fname=request.POST.get('fname'),            
 			lname=request.POST.get('lname'),            
-			phone_number=request.POST.get('phone_number'))        
+			phone_number=request.POST.get('phone_number'))
 		return HttpResponse(status=201) #created    
 			
 	def delete(self, request, contact_id):        
