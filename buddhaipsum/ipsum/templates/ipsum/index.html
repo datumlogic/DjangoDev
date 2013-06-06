@@ -1,1 +1,25 @@
-this is a test
+<body onload=''>
+
+<h2>Create Lorem Ipsum</h2>
+<form action="/ipsum/" name="myForm" method="POST" id='myForm' enctype="application/x-www-form-urlencoded">
+<pre style="margin-left:25px;">
+Min Words:      <input type="text" id="minwords" name="minwords" size=4 value=3 /><br />
+Max Words:      <input type="text" id="maxwords" name="maxwords" size=4 value=25 /><br />
+Min Sentences:  <input type="text" id="minsentences" name="minsentences" size=4 value=4 /><br />
+Max Sentences:  <input type="text" id="maxsentences" name="maxsentences" size=4 value=8 /><br />
+Num Paragraphs: <input type="text" id="paragraphs" name="paragraphs" size=4 value=5 /><br />
+KeyID:          <input type="text" id="keyID" name="keyID" size=12 /><br />
+Signature:      <input type="text" id="sig" name="sig" size=30 /><br />
+Timestamp:      <input type="text" id="t" name="t" /><br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div id='myDiv' style="width:48px;background:lightgray;" onmouseover="this.style.background='gray';" onmouseout="this.style.background='lightgray';">Submit</div>
+</pre>
+
+</form>
+
+</body>
+<script>
+document.getElementById("myDiv").onclick = function() {
+   document.getElementById("myForm").submit(); 
+};
+</script>

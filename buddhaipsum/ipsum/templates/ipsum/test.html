@@ -1,0 +1,9 @@
+<form action="/ipsum" method="POST" id="myForm" enctype="application/x-www-form-urlencoded">{% csrf_token %}
+{{ form.as_p }}
+</form>
+<div id='myDiv' style="width:48px;background:lightgray;" onmouseover="this.style.background='gray';" onmouseout="this.style.background='lightgray';">Submit</div>
+<script>
+document.getElementById("myDiv").onclick = function() {
+   document.getElementById("myForm").submit();
+};
+</script>

@@ -1,30 +1,41 @@
 from django.http import HttpResponse #this import may not be needed later
 
-from ipsum.ModelBuilders import PageBuilder
-
+from simple_rest import Resource
 from simple_rest.auth.decorators import signature_required, admin_required, login_required
+
+from django.template import Context, loader
+
+from ipsum.ModelBuilders import PageBuilder
 
 # just for demo now. This should take a KeyID as an arg and lookup the secret in a database
 def secret_key(request, *args, **kwargs):
 	return 'test'
 
 #global singleton instance for the ModelBuilder class
+#everytime the view calls IpsumPages, a new class instances is created, so cannot use a class member var
 builder = None
 
+class IpsumPages(Resource):
 
-def index(request):
-	return HttpResponse("This is Index.html<br />This page will contain the form to set the variables for the ipsum generator.")
-
-
-def words(request, ipsum_words):
-	return HttpResponse("This is the WORD detail: %s" % ipsum_words)
-
-@login_required
-def sentences(request, ipsum_words, ipsum_sentences):
-	# global builder cache's the PageBuilder class/latin-Dictionary.txt in memory
-	global builder
-	if builder == None:
-		builder = PageBuilder('latin_dictionary.txt')
-	rtn = builder.buildPage(1,ipsum_words,1,ipsum_sentences,1)
-	return HttpResponse(rtn)
-	#return HttpResponse("This is the SENTENCES detail: <br />%s %s" % (ipsum_words,ipsum_sentences))
+	def get(self, request, contact_id=None, **kwargs):
+		template = loader.get_template('ipsum/index.html') 
+		context = Context()
+		return HttpResponse(template.render(context))
+		#return HttpResponse("This is a GET request", content_type='application/json', status=200)
+		
+	def post(self, request, *args, **kwargs):
+		minwords= request.POST.get('minwords')
+		maxwords=request.POST.get('maxwords')
+		minsentences=request.POST.get('minsentences')
+		maxsentences=request.POST.get('maxsentences')
+		paragraphs=int(request.POST.get('paragraphs'))
+		#rtnX='NON'
+		global builder;
+		if builder == None:
+			builder = PageBuilder('latin_dictionary.txt')
+			#rtnX='init'
+		rtn = builder.buildPage(minwords,maxwords,minsentences,maxsentences,paragraphs)
+		#return HttpResponse(rtn)
+		template = loader.get_template('ipsum/result.html')
+		context = Context({'ipsum_page':rtn,})
+		return HttpResponse(template.render(context))

@@ -3,13 +3,9 @@
 # =============================
 from django.conf.urls import patterns, url
 
-from ipsum import views
+from .views import IpsumPages
 
 urlpatterns = patterns('',
 	# ex: /ipsum/
-	url(r'^$', views.index, name='index'),
-	# ex: /polls/5/
-	url(r'^(?P<ipsum_words>\d+)/$', views.words, name='words'),
-	# ex: /polls/5/4/
-	url(r'^(?P<ipsum_words>\d+)/(?P<ipsum_sentences>\d+)/$', views.sentences, name='sentences'),
+	url(r'^$', IpsumPages.as_view()),
 )
